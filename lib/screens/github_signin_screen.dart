@@ -25,7 +25,12 @@ class GitHubSignInScreen extends StatelessWidget {
           // Extract code from the callback URL
           Uri uri = Uri.parse(request.url);
           String code = uri.queryParameters['code'] ?? '';
-          _handleGitHubCallback(context, code);
+
+          // Use a closure to capture the code value
+          _handleGitHubCallback(context, () {
+            return code;
+          });
+
           return NavigationDecision.prevent;
         }
         return NavigationDecision.navigate;
@@ -33,11 +38,13 @@ class GitHubSignInScreen extends StatelessWidget {
     );
   }
 
-    void _handleGitHubCallback(String code, context) {
+  void _handleGitHubCallback(BuildContext context, Function() getCode) {
     // Implement code handling (send it to your server, etc.)
     // Once authenticated, you can navigate to the next screen
+    String code = getCode();
+    // Now you can use the 'code' variable as needed
+
     Navigator.pop(context); // Close the GitHubSignInScreen
     // Navigate to the next screen or perform necessary actions
-    }
-
+  }
 }
