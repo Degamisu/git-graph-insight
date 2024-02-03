@@ -2,7 +2,7 @@ name: gitgraph_insight
 description: A Flutter app for GitHub analytics and visualization.
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.17.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -18,4 +18,4 @@ flutter:
   uses-material-design: true
 
   # assets TODO
-  # icon: assets/images/logo.png
+  icon: assets/images/logo.png

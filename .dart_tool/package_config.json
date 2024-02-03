@@ -167,10 +167,10 @@
       "name": "gitgraph_insight",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.17"
     }
   ],
-  "generated": "2024-02-03T01:16:26.968098Z",
+  "generated": "2024-02-03T01:58:40.105536Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }
