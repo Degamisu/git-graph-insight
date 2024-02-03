@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../widgets/chart_widget.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+import 'github_signin_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -12,10 +13,31 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ChartWidget(), // Your GitHub activity chart
-            // Add more widgets as needed
+            Text(
+              'Welcome to GitGraph Insight!',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+            onPressed: () {
+                _handleSignIn(context);
+            },
+            child: Text('Sign In with GitHub'),
+            ),
+
+              child: Text('Sign In with GitHub'),
+            ),
           ],
         ),
+      ),
+    );
+  }
+
+  void _handleSignIn(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => GitHubSignInScreen(),
       ),
     );
   }
