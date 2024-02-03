@@ -141,27 +141,27 @@
     },
     {
       "name": "webview_flutter",
-      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter-3.0.4",
+      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter-4.5.0",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "3.0"
     },
     {
       "name": "webview_flutter_android",
-      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter_android-2.10.4",
+      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter_android-3.14.0",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "3.0"
     },
     {
       "name": "webview_flutter_platform_interface",
-      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter_platform_interface-1.9.5",
+      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter_platform_interface-2.10.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "webview_flutter_wkwebview",
-      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-2.9.5",
+      "rootUri": "file:///home/nickc/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.11.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.2"
     },
     {
       "name": "gitgraph_insight",
@@ -170,7 +170,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-02-03T00:11:10.369666Z",
+  "generated": "2024-02-03T01:16:26.968098Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }
