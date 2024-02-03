@@ -4,6 +4,8 @@
 
 </p>
 
+[![Build and Release](https://github.com/Degamisu/git-graph-insight/actions/workflows/build-and-release.yml/badge.svg?branch=main)](https://github.com/Degamisu/git-graph-insight/actions/workflows/build-and-release.yml)
+
 Welcome to Git Graph Insight, A graphing app for your personal Github Account.
 
 ---
