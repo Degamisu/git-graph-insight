@@ -47,3 +47,37 @@ Run this in the Terminal.
 ```bash
 sudo softwareupdate --install-rosetta --agree-to-license
 ```
+
+---
+
+### Initialize Flutter
+
+To initialize Flutter:
+
+**All OS**
+
+```bash
+flutter pub get
+```
+
+### Build
+
+This will build Git Graph Insight.
+
+**Linux**
+
+```bash
+flutter build linux
+```
+
+**Windows**
+
+```bash
+flutter build windows
+```
+
+**macOS**
+
+```bash
+flutter build macos
+```
