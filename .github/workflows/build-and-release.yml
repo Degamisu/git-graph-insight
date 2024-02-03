@@ -1,0 +1,66 @@
+name: Build and Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '2.x' # Use the desired Flutter version
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Build for Linux
+      run: flutter build linux
+
+    - name: Build for Windows
+      run: flutter build windows
+
+    - name: Build for macOS
+      run: flutter build macos
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_GGI }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Linux Build
+      uses: actions/upload-artifact@v2
+      with:
+        name: linux
+        path: build/linux
+
+    - name: Upload Windows Build
+      uses: actions/upload-artifact@v2
+      with:
+        name: windows
+        path: build/windows
+
+    - name: Upload macOS Build
+      uses: actions/upload-artifact@v2
+      with:
+        name: macos
+        path: build/macos
