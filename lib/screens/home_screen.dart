@@ -25,8 +25,6 @@ class HomeScreen extends StatelessWidget {
             child: Text('Sign In with GitHub'),
             ),
 
-              child: Text('Sign In with GitHub'),
-            ),
           ],
         ),
       ),

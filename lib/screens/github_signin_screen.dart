@@ -33,7 +33,7 @@ class GitHubSignInScreen extends StatelessWidget {
     );
   }
 
-    void _handleGitHubCallback(String code) {
+    void _handleGitHubCallback(String code, context) {
     // Implement code handling (send it to your server, etc.)
     // Once authenticated, you can navigate to the next screen
     Navigator.pop(context); // Close the GitHubSignInScreen
