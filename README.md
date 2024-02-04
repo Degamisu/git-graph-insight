@@ -30,6 +30,8 @@ Git Graph Insight is a simple application that will help you visualize your Gith
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+Some broken badges to be worked on!
+
 [![All Contributors](https://img.shields.io/github/all-contributors/degamisu/git-graph-insight?color=ee8449&style=flat-square)](#contributors)
 
 ## Installation
