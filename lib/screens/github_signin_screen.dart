@@ -82,7 +82,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final authorizationUrl = 'https://github.com/login/oauth/authorize';
-    final redirectUri = 'https://your-app-callback-url.com';
+    final redirectUri = 'http:/localhost:3000';
 
     return Scaffold(
       appBar: AppBar(

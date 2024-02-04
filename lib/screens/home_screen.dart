@@ -18,12 +18,11 @@ class HomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-            onPressed: () {
+              onPressed: () {
                 _handleSignIn(context);
-            },
-            child: Text('Sign In with GitHub'),
+              },
+              child: Text('Sign In with GitHub'),
             ),
-
           ],
         ),
       ),
@@ -34,7 +33,11 @@ class HomeScreen extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => GitHubSignInScreen(),
+        builder: (context) => GitHubSignInScreen(
+          authorizationUrl: 'https://github.com/settings/applications/2464920',
+          redirectUri:
+              'https://github.com/settings/applications/2464920', // Placeholder for now...
+        ),
       ),
     );
   }
