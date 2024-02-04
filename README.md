@@ -19,6 +19,21 @@ Git Graph Insight is a simple application that will help you visualize your Gith
 > 
 > For mobile users, Git Graph Insight will become available for mobile as development continues.
 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Some broken badges to be worked on!
+
+[![All Contributors](https://img.shields.io/github/all-contributors/degamisu/git-graph-insight?color=ee8449&style=flat-square)](#contributors)
+
 ## Installation
 
 To install **Git Graph Insight**, Follow these steps
